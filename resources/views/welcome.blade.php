@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
+@extends('layouts.master')
 
-    </head>
-    <body>
-        
-    </body>
-</html>
+@section('title')
+	Welcome!
+@endsection
+
+@section('content')
+	this is the content!
+@endsection
