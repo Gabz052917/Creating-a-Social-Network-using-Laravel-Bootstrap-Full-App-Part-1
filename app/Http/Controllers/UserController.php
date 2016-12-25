@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -29,6 +30,10 @@ class UserController extends Controller
 	}
 	public function postSignIn(Request $request)
 	{
-		
+		if (Auth::attempt(['email' => $request['email'], 'password' => $request['password']]))
+		{
+			return redirect()->route('dashboard');
+		}
+		return redirect()->back();
 	}
 }
