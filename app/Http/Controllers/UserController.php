@@ -19,7 +19,7 @@ class UserController extends Controller
 		
 		$user->save();
 		
-		return redirect()->back();
+		return redirect()->route('dashboard');
 		
 	}
 	public function postSignIn(Request $request)
