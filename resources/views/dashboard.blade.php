@@ -46,7 +46,12 @@
         <h4 class="modal-title">Edit Post</h4>
       </div>
       <div class="modal-body">
-        <p>One fine body&hellip;</p>
+        <form>
+        	<div class="form-group">
+        		<label for="post-body">Edit the Post</label>
+        		<textarea class="form-control" name="post-body" id="post-body" rows="5"></textarea>
+        	</div>
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
